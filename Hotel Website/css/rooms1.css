@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif ;
+}
+
+
+html {
+
+  font-size: 62.5%;   
+}
+
+a{
+    text-decoration: none;
+}
+/* Navbar*/
+
+#navbar {
+    font-size: 15px;
+    background: #333;
+    color: aliceblue;
+    overflow: auto;
+}
+
+#navbar a {
+    color: aliceblue;
+    /* text-decoration: none; */
+}
+
+#navbar .logo {
+    float: left;
+    padding-top: 20px;
+}
+
+#navbar ul {
+    list-style: none;
+    float: right;
+}
+
+#navbar ul li {
+    float: left;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.current {
+    background: #444;
+    color: #f7c08a;
+}
+
+/* Common Header */
+
+.common-header {
+  padding: 5rem;
+  text-align: center;
+  color: #b85d1c;
+}
+
+.common-heading {
+  font-size: 4rem;
+  font-weight: 300;
+  letter-spacing: .2rem;
+}
+
+.small-underline {
+  width: 9rem;
+  height: .1rem;
+  margin: 3rem auto 1rem auto;
+  background-color:#b85d1c ;
+}
+
+.big-underline {
+  width: 20rem;
+  height: .1rem;
+  margin: auto;
+  background-color:#b85d1c ;
+}
+
+/* End Common Header */
+
+
+/*  Rooms  */
+
+.rooms {
+  margin-left: 8rem;
+  font-size: 62.5%;
+}
+
+.rooms-cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.room-card {
+  width: 60rem;
+  margin: 5rem;
+  background-color: #15141b;
+  box-shadow: 0 3rem 6rem rgba(0 , 0 , 0 , .3 );
+}
+
+.room-img {
+  width: 100%;
+  height: 65%;
+}
+
+.room-card-content {
+  color: #ddd;
+  padding: 2rem;
+}
+
+.room-card-heading {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.room-card-paragraph {
+  font-size: 1.5rem;
+  color: #777;
+}
+
+.room-price {
+  font-size: 5rem;
+  font-weight: 300;
+  text-align: right;
+}
+
+.room-card-btn {
+  width: 15rem;
+  padding: 1.5rem 1rem;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.2rem;
+  outline: none;
+  text-transform: uppercase;
+  border: none;
+  color: #b85d1c;
+  background-color: transparent;
+  border: .1rem solid #b85d1c;
+  cursor: pointer;
+  border-radius: 10rem;
+}
+
+.rooms-btn-wrapper {
+  text-align: center;
+}
+
+.rooms-btn {
+  width: 20rem;
+  padding: 1.5rem 1rem;
+  margin: 4rem 0;
+  background-color: transparent;
+  text-transform: uppercase;
+  color: #b85d1c;
+  outline: none;
+  border: .2rem solid #b85d1c;
+  cursor: pointer;
+  box-shadow: 0 1.5rem 6rem rgba(0 , 0 , 0 , .2);
+  transition:all .2s;
+}
+
+.rooms-btn:hover {
+  color: #ddd;
+  background-color: #b85d1c;
+}
+
+/* End Rooms  */
+
+
+/* Media Screen */
+
+@media(max-width: 1400px) {
+  .main-part {
+    flex-direction: column;
+  }
+  .footer-list {
+    display: flex;
+  }
+
+  .footer-list-item {
+    margin-right: 3rem;
+  }
+}
+
+@media(max-width: 1200px) {
+
+  .about-us {
+    flex-direction: column;
+    padding-bottom: 25rem;
+  }
+
+  .about-us-content{
+    margin-bottom: 13rem;
+  }
+
+  .image {
+    width: 25rem;
+  }
+}
+
+@media(max-width: 993px) {
+  .banner{
+    text-align: center;
+  }
+
+  .banner-heading {
+    font-size: 4.7rem;
+  }
+
+  .banner-paragraph {
+    font-size: 2.6rem;
+  }
+
+  .banner-button {
+    width: 16rem;
+    font-size: 1.5rem;
+  }
+
+}
+
+
+@media(max-width: 750px) {
+
+  .footer-list {
+    display: block;
+  }
+
+  .banner {
+    text-align: center;
+  }
+
+  .banner-heading {
+    font-size: 3.5rem;
+  }
+
+  .banner-paragraph {
+    font-size: 2.1rem;
+  }
+
+  .room-card-heading{
+    font-size: 2.5rem;
+  }
+
+  .room-price {
+    font-size: 2.5rem;
+
+  }
+
+  .common-heading {
+    font-size: 3rem;
+  }
+
+
+}
+
+@media(max-width: 600px){
+  .room-card-btn{
+    width: 13rem;
+    font-size: 1.1rem;
+    padding: .7rem .5rem;
+  }
+}
+
+@media(max-width: 570px) {
+  .room-card {
+    height: calc(100% / 4);
+  }
+
+
+  .room-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+}
+
+@media(max-width: 500px){
+  .navigation {
+    width: 28rem;
+  }
+
+  .navigation-search-input {
+    width: 23rem;
+  }
+
+  .image {
+    width: 18rem;
+  }
+
+  .footer-input {
+    width: 16rem;
+    font-size: 1.4rem;
+  }
+
+  .banner-heading {
+    font-size: 2.1rem;
+  }
+
+}
+
+
+@media(max-width: 520px){
+  .about-us-heading {
+    font-size: 3rem;
+  }
+  .sub-heading {
+    font-size: 2.5rem;
+  }
+
+  .about-us-content {
+    text-align: center;
+    padding: 3rem;
+  }
+
+  .banner-heading {
+    font-size: 3rem;
+  }
+
+
+}
